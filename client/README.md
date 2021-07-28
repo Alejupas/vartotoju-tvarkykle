@@ -4,7 +4,7 @@
 
 1. pasileist terminale client folderi ir irasyt 'npm start' (pasileidziam rontenda react)
 
-2. root direktorijoje pasileisti 'npm start' (backendo serveri)
+2. root direktorijoje pasileisti 'npm start' (backendo serveri), arba fronta pasileisti su 'npm start react' komanda
 
 'npm install' instaliuoti terminale aplikacijas :
-nodemon/cors/dotenv/mongoose/morgan/nodemon
+nodemon/cors/dotenv/mongoose/morgan/nodemona
