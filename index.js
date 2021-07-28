@@ -20,3 +20,10 @@ mongoose
     console.log('Connected successfully to Mongoose');
   })
   .catch((err) => console.error(err.message));
+
+//routes
+const Routes = require('./serverApi/apiRoutes');
+
+app.use('/', apiRoutes);
+
+app.listen(PORT, console.log(`Server is running on port ${PORT}`));
