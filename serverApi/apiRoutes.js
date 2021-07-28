@@ -22,8 +22,28 @@ router.get('/allUsers', async (req, res) => {
 });
 
 router.delete('/deleteUser/:id', async (req, res) => {
-  await User.findOneAndDelete({ _id: req.params.id });
-  res.send({ success: true, msg: 'User deleted' });
+  try {
+    const deleteResult = await User.findByIdAndDelete(userToDeleteId);
+    res.json(deleteResult);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.put('/editUser/:id', async (req, res) => {
+  const { userName, age, email } = req.body;
+  await User.findOneAndUpdate(
+    { _id: req.params.id },
+    {
+      userName,
+      age,
+      email,
+    }
+  );
+  res.send({
+    success: true,
+    message: `User ${userName} edited and updated successfully`,
+  });
 });
 
 module.exports = router;

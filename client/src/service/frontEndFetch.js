@@ -45,4 +45,13 @@ const getAllUsers = async () => {
   }
 };
 
-export { createUser, getAllUsers, deleteUser };
+const editUser = async (id, updatedBody) => {
+  const res = await fetch(`http://localhost:4000/editUser/${id}`, {
+    method: 'PUT',
+    body: JSON.stringify(updatedBody),
+    ...fetchOptions,
+  });
+  await res.json();
+};
+
+export { createUser, getAllUsers, deleteUser, editUser };

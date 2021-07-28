@@ -1,0 +1,24 @@
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.all-users {
+  height: 50%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.one-user-div {
+  border: 1px solid grey;
+  border-radius: 15px;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+}

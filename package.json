@@ -4,7 +4,8 @@
   "description": "Users crud app",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "react": "npm start --prefix client"
   },
   "author": "Mindaugas Kapickas",
   "license": "MIT",
