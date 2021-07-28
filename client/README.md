@@ -2,9 +2,13 @@
 
 # paleidimas
 
-1. pasileist terminale client folderi ir irasyt 'npm start' (pasileidziam rontenda react)
+1. Terminale > git clone ir repositorijos URL
+2. npm install
 
-2. root direktorijoje pasileisti 'npm start' (backendo serveri), arba fronta pasileisti su 'npm start react' komanda
+3. pasileist terminale client folderi ir irasyt 'npm start' (pasileidziam rontenda react)
 
-'npm install' instaliuoti terminale aplikacijas :
+4. root direktorijoje pasileisti 'npm start' (backendo serveri), arba fronta pasileisti su 'npm start react' komanda
+
+# DEPENDENCIES
+
 nodemon/cors/dotenv/mongoose/morgan/nodemona
