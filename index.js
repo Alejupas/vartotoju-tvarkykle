@@ -1,4 +1,4 @@
-require('dotenv');
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -22,7 +22,7 @@ mongoose
   .catch((err) => console.error(err.message));
 
 //routes
-const Routes = require('./serverApi/apiRoutes');
+const apiRoutes = require('./serverApi/apiRoutes');
 
 app.use('/', apiRoutes);
 

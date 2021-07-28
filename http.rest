@@ -1,0 +1,12 @@
+### add user 
+
+POST http://localhost:4000/addNewUser
+Content-Type: application/json
+
+{
+    "userName":"Karnisovas", "age":52, "email": "arturasKarnisovasGeriausiasLTkrepsininkas@lkl.lt", "password":"arturkaPacanas555"
+}
+
+### get all users
+
+GET http://localhost:4000/allUsers

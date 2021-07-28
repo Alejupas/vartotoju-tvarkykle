@@ -19,14 +19,10 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    repeatPassword: {
-      type: String,
-      required: true,
-    },
   },
   { timestamps: true }
 );
 
-const User = mongoose.model('UserData', userSchema);
+const User = mongoose.model('UsersData', userSchema);
 
 module.exports = User;
