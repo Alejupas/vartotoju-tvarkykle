@@ -21,4 +21,9 @@ router.get('/allUsers', async (req, res) => {
   }
 });
 
+router.delete('/deleteUser/:id', async (req, res) => {
+  await User.findOneAndDelete({ _id: req.params.id });
+  res.send({ success: true, msg: 'User deleted' });
+});
+
 module.exports = router;
